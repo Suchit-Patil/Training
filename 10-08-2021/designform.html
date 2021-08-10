@@ -1,7 +1,12 @@
 <html>
-    <body background="img.jpg"width="1275 " height="700"><center>
-     <h1><center>------CV-----</center></h1>
-        <table border="1">
+    <head>
+        <link rel="stylesheet" type="text/css" href="mystyles.css">  
+    </head>
+    <body><img src="logo.png" width="180" height="180">
+        <center>
+        
+        <h1><center>Register Here !</center></h1>
+        <table style="width: 35%;" border="1">
             <tr>
                 <td> <h3><center>Personal Details</center></h3></td>
             </tr>
@@ -9,19 +14,20 @@
                    <td>
                         <form>
                             <br>
-                         <b>Name: </b> <input type="text" name="Name" placeholder="Enter Your Name">  
-                             <b>Last Name: </b> <input type="text" name="Name" placeholder="Enter Your Last Name">  
-                             <br><br><b>Gender: </b>
-                             <input type="radio" name="gender" value="male"> Male
-                             <input type="radio" name="gender" value="female"> Female
-                             <input type="radio" name="gender" value="other"> Other
-                             <b>linkedIn : </b> <input type="url"  placeholder="Enter linkedIn url"> 
+                        <b>Name:  </b> <input type="text" class ="id"name="Name"  ><br> <br> 
+                             <b>Last Name: </b> <input type="text" class ="id" name="Name">  <br> <br> 
+                       <b>Gender: </b>
+                             <label><input type="radio" name="gender" value="male">Male
+                             <input type="radio" name="gender" value="female">Female
+                             <input type="radio" name="gender" value="other">Other</label>
+                             <br><br> 
+                             <b>linkedIn : </b> <input type="url" class ="id" > 
                              <br><br>
-                             <b>Address: </b> <input type="text"  placeholder="Enter Your Address"> 
-                             <b>Pincode: </b> <input type="number"  placeholder="Enter Your Pincode"> 
+                             <b>Address: </b> <input type="text"class ="id"  > <br> <br> 
+                             <b>Pincode: </b> <input type="number"class ="id"  > 
                              <br><br>
                             <label for="Country"><b>Country:</b></label>
-                                <select name="Country" id="Country">
+                                <select name="Country" class ="id" id="Country">
                                     <option value="Afghanistan">Afghanistan</option>
                                   
                                     <option value="Albania">Albania</option>
@@ -251,95 +257,14 @@
                                     <option value="Yemen">Yemen</option>
                                     <option value="Zambia">Zambia</option>
                                     <option value="Zimbabwe">Zimbabwe</option>
-                                </select>
+                                </select><br> <br> 
                                 <label for="email"><b>Enter your email:</b></label>
-                                <input type="email" name="email" placeholder="abc@gmail.com"required>   
+                                <input type="email" name="email"class ="id" >   
                         </form>
                     </td>
                 </tr>
-                <tr>
-                    <td>
-                        <h3><center>Working Experience</center></h3>
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        <form><br>
-                            <b>Company: </b> <input type="text" name="Company" >  
-                             <b>Joining Date: </b> <input type="date" name="Name" >  
-                             <br><br>
-                             <b>Experience: </b> <input type="number"  > 
-                             <b>Location: </b> <input type="text"> 
-                             <br><br>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3><center>Education </center></h3>
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        <form><br>
-                            <b>X School Name: </b> <input type="text" name="name" >  
-                             <b>X Percentage: </b> <input type="number"  >  
-                             <br><br>
-                             <b>XII College Name: </b> <input type="text" name="name" >  
-                             <b>XII Percentage: </b> <input type="number"  >  
-                             <br><br>
-                             <b>College Name: </b> <input type="text" name="name" >  
-                             <b>Percentage/CGPA: </b> <input type="number"  >  
-                             <br><br>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3><center>Skills<center></h3>
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        <form><br>
-                            <label for="language"><b>Programming Language:</b></label>
-                                <select id="language" name="language">
-                                    <option value="">Java</option>
-                                    <option value="">C#</option>
-                                    <option value="">C</option>
-                                    <option value="">C++</option>
-                                    <option value="">Python</option>
-                                    <option value="">Javascript</option>
-                                    <option value="">Node.JS</option>
-                                    <option value="">React JS</option>
-                                    <option value="">MYSQl</option>
-                                </select><br><br>
-                            <b>Technical Skills:</b> <textarea id="skills" name="skills" rows="1" cols="50">
-                                </textarea>
-                             <br><br>
-                             <b>Non -Technical Skills: </b><textarea id="skills" name="skills" rows="1" cols="50">
-                            </textarea>
-
-                             <br><br>
-                        </form>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <h3><center>Extra Activities<center></h3>
-                    </td>
-                </tr>
-                <tr> 
-                    <td>
-                        <form><br>
-                            <b>Certification:</b> <textarea id="skills" name="skills" rows="1" cols="50">
-                            </textarea>
-                            <br><br>
-                            <form action="">
-                                <input type="file" name="filename"></form>
-                        </form>
-                    </td>
-                </tr>
-        </table></center>
+               
+        </table><br><br> <button>Submit</button>
+    </center>
   </body>
 </html>
