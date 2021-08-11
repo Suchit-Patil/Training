@@ -1,0 +1,40 @@
+h1{
+    color:black;
+    text-align: center;
+}
+
+td:hover{
+    color: blue;
+    cursor: pointer;
+}
+.table{
+    border:2px solid black ;
+    border-radius: 5px;
+    padding: 8%;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    text-align: center;
+}
+body{
+    background: url(img2.jpg);
+    width: 280px;
+    height: 180px;
+    padding: 50px;
+}
+.form-group
+{
+background  : cyan;
+width: 780px;
+height: 380px;
+border-radius: 15px;
+position: relative;
+margin: 6% auto;
+padding: 20px 200px;
+overflow: hidden;
+text-align: center;
+table-layout: center;
+}
+marquee{
+ color: white;
+}
