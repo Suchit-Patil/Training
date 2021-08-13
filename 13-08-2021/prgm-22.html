@@ -1,0 +1,42 @@
+/* 22. Make a simple calculator using switch case. a. 1.Addition b. 2.Subtraction c. 3.Multiplication d. 4.Division.*/
+
+<html>
+<head>
+    <script type="text/javascript">
+    document.write("<br>");
+    document.write("<br>");   
+        Number1 = 5;
+        Number2 = 6;
+        
+    document.write("Number1 = 5")
+    document.write("<br>");   
+    document.write("<br>");
+    document.write("Number2 = 6")
+    document.write("<br>");   
+    document.write("<br>");
+
+    var operator = parseInt(prompt("Please enter a Number" ));
+    switch(operator)
+    {
+        case 1:
+            var Add = Number1+ Number2;
+            document.write("ADDITION = "+Add);
+            break;
+        case 2:
+            var Sub = Number1- Number2;
+            document.write("SUBTRACTION = "+Sub);
+            break;
+        case 3:
+           var  Mul = Number1* Number2;
+            document.write("MULTIPLICATION = "+Mul);
+            break;
+        case 4:
+             var Div = Number1/ Number2;
+            document.write("DIVISION = "+Div);
+            break;
+    }
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,52 @@
+/*23. Take 5 numbers and calculate percentage. According to that percentage print grade.
+• If marks <50 then Grade is F.
+• if marks >=50 <60 then Grade is D.
+• if marks >=60 <70 then Grade is C.
+• if marks >=70 <80 then Grade is B.
+• if marks >=80 <90 then Grade is A.
+• if marks >=90 then Grade is A+ */
+
+<html>
+<head>
+    <script type="text/javascript">
+    document.write("<br>");
+    document.write("<br>");   
+        num1 = 50;
+        num2 = 78;
+        num3 = 90;
+        num4 = 41;
+        num5 = 86;
+        Total = num1 + num2 + num3 + num4 + num5; 
+        percentage = Total / 500 * 100;
+        document.write("Percentage"+percentage); 
+        document.write("<br>");
+
+        if(percentage<50)
+        {
+            document.write("Grade F");   
+        }
+        else if(percentage>=50 && percentage<60)
+        {
+            document.write("Grade D");   
+        }
+        else if(percentage>=60 && percentage<70)
+        {
+            document.write("Grade C");   
+        }
+        else if(percentage>=70 && percentage<80)
+        {
+            document.write("Grade B");   
+        }
+        else if(percentage>=80 && percentage<90)
+        {
+            document.write("Grade A");   
+        }
+        else if(percentage>=90)
+        {
+            document.write("Grade A+");   
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
