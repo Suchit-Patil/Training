@@ -1,0 +1,25 @@
+<html>
+<body>
+<p class="test">This is a paragraph of text.
+    <br>This is a paragraph of text
+</p>
+<p class="test">This is a paragraph of text.
+    <br>This is a paragraph of text
+</p>
+<script type="text/javascript">
+    var matches = document.getElementsByClassName("test");
+    console.log(matches);
+// Displaying the selected elements count
+    document.write("Number of selected elements: " + matches.length);
+// Applying bold style to first element in selection
+        matches[0].style.fontWeight = "bold";
+        matches[0].style.border="3px solid black";
+        matches[0].style.background = "red";
+        matches[0].style.fontStyle = "italic";
+        matches[1].style.fontWeight = "bold";
+        matches[1].style.border="3px solid black";
+        matches[1].style.background = "red";
+        matches[1].style.fontStyle = "italic";
+</script>
+</body>
+</html>

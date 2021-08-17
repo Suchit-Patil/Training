@@ -1,0 +1,38 @@
+h1{
+    color:cyan;
+    position: sticky;
+}
+body{
+    background-image: linear-gradient(90deg , black, rgba(255,0,0,1));
+}
+b{
+    color: white;
+}
+
+select{
+   
+    padding: 10px;
+    width: 300px;
+}
+button{
+    background-color: cyan;
+    border-radius: 20px; 
+    padding: 10px 20px;
+    width: 20%;
+}
+.id{
+  
+    padding: 10px;
+    width: 300px;
+
+}
+img {
+    border-radius: 8px;
+  }
+table{
+    border-collapse: collapse;
+    border:3px black;
+}
+label{
+    color: white;
+}
