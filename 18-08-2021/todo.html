@@ -1,0 +1,26 @@
+
+<html>
+<head>
+<script>
+        function todo()
+        {   
+            var todos = document.getElementById("demo");
+            var list = document.getElementById("list");
+            if(todos.value !=" ")
+            {
+                var newlist = document.createElement("li");
+                newlist.appendChild(document.createTextNode(todos.value));
+                list.appendChild(newlist);
+            }
+            console.log(list);
+    }
+</script>
+</head>
+<body><br/><br/><br/>
+        <input type="text" id="demo"><br/><br/>
+        <input type="submit" onclick="todo()"></button>
+        <br>
+        <ul id="list"></ul>
+
+</body>
+</html>
