@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="mystyles.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <center><h2>Registration Form</h2></center><br> <br>
+            <form action="" name="registration">
+          
+              <label for="firstname">First Name</label>
+              <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name"/>
+                <br>
+              <label for="lastname">Last Name</label>
+              <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name"/>
+              <br>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter Your Email"/>
+              <br>
+              <label for="date">DOB</label>
+              <input type="date" name="date" id="date" />
+              <br>
+              <label for="age">Age</label>
+              <input type="number" name="age" id="age" />
+              <br>
+              <label for="contact">Contact No</label>
+              <input type="number" name="contact" id="contact"/>
+              <br>
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+              <br>
+              <label for="password_confirm">Confirm Password</label>
+              <input type="password" name="password" id="password_confirm" />
+              <br>
+              <button type="submit">Register</button>
+          
+            </form>
+          </div>
+    </body>
+    <script>
+        $(function() {
+   
+            $("form[name='registration']").validate(
+                    {
+             
+              rules: {
+               
+                firstname: "required",
+                lastname: "required",
+                email: {
+                  required: true,
+                  
+                  email: true
+                },
+                date:"required",
+                age:{ required :true,
+                    min:18,
+                    max:80,
+                },
+                contact:{
+                required:true,
+                minlength:9,
+                maxlength:10,
+                number: true
+                },
+                password: {
+                  required: true,
+                  minlength: 5
+                }
+              },
+              password_confirm:{
+                required: true,
+                minlength: 5,
+                equalTo: "#password"
+              },
+           
+              messages: {
+                firstname: "Please enter your firstname",
+                lastname: "Please enter your lastname",
+                date:"Please Enter date",
+                age:"Please enter age greater than 18",
+                password: {
+                  required: "Please provide a password",
+                  minlength: "Your password must be at least 5 characters long"
+                },
+                
+                email: "Please enter a valid email address"
+              },
+
+              
+              submitHandler: function(form) {
+                form.submit();
+              }
+            });
+          });</script>
+</html>
