@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>jQuery :gt(n) Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("p:gt(5)").css('color', 'red');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+  <p>first paragraph</p>
+  <p>second paragraph</p>
+  <p>third paragraph</p>
+  <br />
+
+  <div style="border:1px solid #000;">
+    <p>fourth paragraph</p>
+    <p>fifth paragraph</p>
+    <p>six paragraph</p>
+  </div>
+  <br />
+
+  <p>seven paragraph</p>
+</body>
+</html>

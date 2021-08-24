@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery parent > child Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $("div > p").css('color', 'blue');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+  <p>first paragraph contents</p>
+  <br />
+
+  <div>
+    <p>this element is a direct child of div element</p>
+    <aside>
+      <p>this element is direct child of aside element</p>
+    </aside>
+  </div>
+  <br />
+
+  <section>
+    <h3>Footer Ending</h3>
+    <p>first paragraph contents</p>
+  </section>
+</body>
+</html>

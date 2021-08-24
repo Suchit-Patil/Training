@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :eq(n) Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("p:eq(0)").css('color', 'red');
+      $("p:eq(4)").css('color', 'red');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+  <p>first paragraph</p>
+  <p>second paragraph</p>
+  <p>third paragraph</p>
+  <br />
+
+  <div style="border:1px solid red;">
+    <p>fourth paragraph</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti repellendus sit deleniti aperiam quia magni aspernatur labore asperiores, molestiae natus velit tempore praesentium eligendi ut molestias vel tempora necessitatibus maxime.</p>
+    <p>six paragraph</p>
+  </div>
+  <br />
+
+  <p>seven paragraph</p>
+</body>
+</html>

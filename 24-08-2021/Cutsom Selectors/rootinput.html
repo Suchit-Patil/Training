@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :not(selector) Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("input:not(:checked) + label").css('color', 'red');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+  <p>first paragraph</p>
+  <p>second paragraph</p>
+  <p>third paragraph</p>
+  <br />
+
+  <div style="border:1px solid red;">
+      <input type="checkbox" name="ra"> <label>Radio</label> <br />
+      <input type="checkbox" name="tv" checked="checked"> <label>TV</label> <br />
+      <input type="checkbox" name="cp"> <label>Cell Phone</label> <br />
+    </div>
+  </div>
+  <br />
+
+</body>
+</html>

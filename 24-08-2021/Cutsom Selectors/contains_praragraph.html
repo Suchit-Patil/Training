@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :contains(text) Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("p:contains('f')").css('color', 'red');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+
+  <section style="border:1px solid #000;">
+    <p>first paragraph contents</p>
+    <p>second paragraph contents</p>
+    <p>third contents</p>
+  </section>
+  <br />
+
+  <div style="border:1px solid #000;">
+    <p>first contents</p>
+    <p>second paragraph contents</p>
+    <p>third contents</p>
+    <h3>Footer Ending</h3>
+  </div>
+</body>
+</html>

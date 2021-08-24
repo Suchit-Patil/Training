@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :first-child Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("p:first-child").css('color', 'green');
+      $("p:last-child").css('color', 'blue');
+      $("p:first-child").css('color', 'green');
+      
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+
+  <section style="border:1px solid #000;">
+    <p>first paragraph contents.</p>
+    <p>second paragraph contents.</p>
+    <p>third paragraph contents.</p>
+  </section>
+  <br/>
+
+  <section style="border:1px solid #000;">
+
+    <p>first paragraph contents.</p>
+    <p>second paragraph contents.</p>
+    <p>third paragraph contents.</p>
+  </section>
+</body>
+</html>

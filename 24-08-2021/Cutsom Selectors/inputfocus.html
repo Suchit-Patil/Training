@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :focus Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("input").click(function(){
+          $('this').focus();
+          $("input:focus").css('background-color', 'greenyellow');
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+  <div>
+    Name <input type="text" name="name" />
+  </div>
+</body>
+</html>

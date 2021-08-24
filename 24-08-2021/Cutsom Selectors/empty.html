@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :empty Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $(":empty").css('background-color', 'green');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+
+  <table border="3" width="300px;">
+    <tr>
+      <td></td>
+      <td>B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Z</td>
+      <td></td>
+      <td>Y</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>A</td>
+        <td></td>
+      </tr>
+  </table>
+
+</body>
+</html>

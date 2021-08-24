@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery :has() Selector</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("p:has('span')").css('color', 'blue');
+    });
+  </script>
+</head>
+<body>
+  <h1>Article heading</h1>
+
+    <p>first paragraph contents</p>
+    <p><span>second paragraph contents</span></p>
+    <p>third contents</p>
+
+  </div>
+</body>
+</html>
