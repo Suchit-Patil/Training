@@ -1,0 +1,49 @@
+
+<html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+<script>
+var average = [50,60,70,80,90,100];
+var marks = [7,8,4,9,3,5];
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: average,
+    datasets: [{
+      backgroundColor: "red",
+      data: marks
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [{ticks: {min: 1, max:10}}],
+    }
+  }
+});
+</script>
+<canvas id="Chart" style="width:100%;max-width:600px"></canvas>
+<script>
+var average = [50,60,70,80,90,100];
+var marks = [7,8,4,9,3,5];
+new Chart("Chart", {
+  type: "line",
+  data: {
+    labels: average,
+    datasets: [{
+      backgroundColor: "blue",
+      data: marks
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [{ticks: {min: 1, max:10}}],
+    }
+  }
+});
+</script>
+<body>
+</body>
+</html>
+
+
