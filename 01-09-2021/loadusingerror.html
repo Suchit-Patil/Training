@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function ()
+         {
+            $("#data").click(function (e)
+             {
+                $.ajax({
+                    url: "nofile.text",
+                    success: function (result, status, xhr) 
+                    {
+                        $('#mydata').html(result)
+                    },
+                    error: function (xhr, status, error) 
+                    {
+                        $('#mydata').html("Result: " + status + " " + error + " " + xhr.status + " " + xhr.statusText)
+                    }
+                   });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <button id="data">Load Data</button>
+    <div id="mydata"></div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<html> 
+   <head>
+      
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+            $("#driver").click(function(event)
+                {
+                $.ajax({
+                   
+                    success: function (result, status, xhr) 
+                    {
+                        $('#driver').html(result)
+                    },
+                });
+            });
+         });
+      </script>
+   </head>
+	
+   <body>
+  
+		
+      <div id = "stage" style = "background-color:red;">
+         Square
+      </div>
+		
+      <input type = "text" id = "square"/>
+      <input type = "button" id = "driver" value = "Square" />
+   </body>
+</html>
+   </body>
+</html>
