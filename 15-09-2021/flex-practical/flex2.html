@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            width: 23%;
+            font-size: 20px;
+            margin: 20px;
+            background-color: skyblue;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .box-container1{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .box1{
+            width: 23%;
+            font-size: 20px;
+            margin: 20px;
+            background-color: red;
+            height: 100px;
+            padding: 20px;
+        }
+
+        .box-container2{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .box2{
+            width: 23%;
+            font-size: 20px;
+            margin: 20px;
+            background-color: greenyellow;
+            height: 100px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Justify -Content : Center</h1>
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <center>Center</center>
+            </div>
+            <div class="box">
+                <center>Center</center>
+            </div>
+            <div class="box">
+                <center>Center</center>
+            </div>
+        </div>
+    </div>
+
+    <h1>Justify -Content : Flex Start</h1>
+    <div class="container1">
+        <div class="box-container1">
+            <div class="box1">
+                <center>Flex Start</center>
+            </div>
+            <div class="box1">
+                <center>Flex Start</center>
+            </div>
+            <div class="box1">
+                <center>Flex Start</center>
+            </div>
+        </div>
+    </div>
+
+    <h1>Justify -Content : Flex End</h1>
+    <div class="container2">
+        <div class="box-container2">
+            <div class="box2">
+                <center>Flex End</center>
+            </div>
+            <div class="box2">
+                <center>Flex End</center>
+            </div>
+            <div class="box2">
+                <center>Flex End</center>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<html>
+<head>
+<style> 
+.box-container{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse; 
+}
+.box-container1{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row; 
+}
+.box{
+    width: 23%;
+    font-size: 30px;
+    margin: 10px;
+    background-color: skyblue;
+    height: 100px;
+    padding: 20px;
+}
+.box1{
+    width: 23%;
+    font-size: 30px;
+    margin: 10px;
+    background-color: orange;
+    height: 100px;
+    padding: 20px;
+}
+
+
+.box-container2{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column; 
+}
+.box2{
+    width: 23%;
+    font-size: 30px;
+    margin: 10px;
+    background-color: red;
+    height: 100px;
+    padding: 20px;
+}
+
+.box-container3{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse; 
+}
+.box3{
+    width: 23%;
+    font-size: 30px;
+    margin: 10px;
+    background-color: greenyellow;
+    height: 100px;
+    padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+    <h1> flex-direction: Row</h1>
+    <div class="container1">
+        <div class="box-container1">
+            <div class="box">Row  1</div>
+            <div class="box">Row  2</div>
+            <div class="box">Row  3</div>
+            <div class="box">Row  4</div>
+            <div class="box">Row  5</div>
+        </div>
+    </div>
+    <h1> flex-direction: Row Reverse</h1>
+    <div class="container">
+        <div class="box-container">
+            <div class="box1">Row Reverse 1</div>
+            <div class="box1">Row Reverse 2</div>
+            <div class="box1">Row Reverse 3</div>
+            <div class="box1">Row Reverse 4</div>
+            <div class="box1">Row Reverse 5</div>
+        </div>
+    </div>
+    <h1>flex-direction: Column</h1>
+    <div class="container2">
+        <div class="box-container2">
+            <div class="box2">Column  1</div>
+            <div class="box2">Column  2</div>
+            <div class="box2">Column  3</div>
+            <div class="box2">Column  4</div>
+            <div class="box2">Column  5</div>
+        </div>
+    </div>
+    <h1>flex-direction: Column Reverse</h1>
+    <div class="container3">
+        <div class="box-container3">
+            <div class="box3">Column Reverse 1</div>
+            <div class="box3">Column Reverse 2</div>
+            <div class="box3">Column Reverse 3</div>
+            <div class="box3">Column Reverse 4</div>
+            <div class="box3">Column Reverse 5</div>
+        </div>
+    </div>
+
+</body>
+</html>

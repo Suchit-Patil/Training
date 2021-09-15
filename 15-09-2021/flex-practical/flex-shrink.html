@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#main {
+  width: 350px;
+  height: 200px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+}
+
+#main div {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+#main div:nth-of-type(2) {
+  flex-shrink: 5;
+}
+</style>
+</head>
+<body>
+
+<h1>Flex-Shrink</h1>
+<div id="main">
+  <div style="background-color:red;"></div>
+  <div style="background-color:blue;"></div>
+  <div style="background-color:green;"></div>
+  <div style="background-color:crimson;"></div>
+  <div style="background-color:orange;"></div>
+</div>
+
+</body>
+</html>
